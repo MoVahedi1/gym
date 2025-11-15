@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تسویه حساب - VIP Fitness - تکمیل اطلاعات و پرداخت">
+    <title>تسویه حساب - VIP Fitness</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="VIP Fitness Logo">
+                    <span>VIP Fitness</span>
+                </a>
+                
+                <div class="checkout-steps">
+                    <div class="step active">
+                        <span class="step-number">۱</span>
+                        <span class="step-label">سبد خرید</span>
+                    </div>
+                    <div class="step active">
+                        <span class="step-number">۲</span>
+                        <span class="step-label">تسویه حساب</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">۳</span>
+                        <span class="step-label">تکمیل سفارش</span>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Content -->
+    <section class="checkout-content section-padding">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Checkout Form -->
+                <div class="checkout-form-section">
+                    <h1>تسویه حساب</h1>
+                    
+                    <!-- Shipping Information -->
+                    <div class="checkout-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-truck"></i> اطلاعات ارسال</h2>
+                        </div>
+                        
+                        <form id="shipping-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first_name">نام *</label>
+                                    <input type="text" id="first_name" name="first_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last_name">نام خانوادگی *</label>
+                                    <input type="text" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">شماره تماس *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">ایمیل *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="province">استان *</label>
+                                <select id="province" name="province" required>
+                                    <option value="">انتخاب استان</option>
+                                    <option value="tehran">تهران</option>
+                                    <option value="alborz">البرز</option>
+                                    <option value="isfahan">اصفهان</option>
+                                    <option value="fars">فارس</option>
+                                    <option value="khorasan">خراسان رضوی</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">شهر *</label>
+                                <select id="city" name="city" required>
+                                    <option value="">ابتدا استان را انتخاب کنید</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">آدرس کامل *</label>
+                                <textarea id="address" name="address" rows="3" placeholder="خیابان، کوچه، پلاک، واحد" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="postal_code">کد پستی *</label>
+                                <input type="text" id="postal_code" name="postal_code" required>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Shipping Method -->
+                    <div class="checkout-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-shipping-fast"></i> روش ارسال</h2>
+                        </div>
+                        
+                        <div class="shipping-methods">
+                            <label class="shipping-method">
+                                <input type="radio" name="shipping_method" value="express" checked>
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>پیک موتوری (تحویل ۲۴ ساعته)</h4>
+                                        <span class="method-price">۳۰,۰۰۰ تومان</span>
+                                    </div>
+                                    <p>تحویل در تهران و حومه طی ۲۴ ساعت</p>
+                                </div>
+                            </label>
+                            
+                            <label class="shipping-method">
+                                <input type="radio" name="shipping_method" value="standard">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>پست پیشتاز (تحویل ۳-۴ روزه)</h4>
+                                        <span class="method-price">۲۰,۰۰۰ تومان</span>
+                                    </div>
+                                    <p>تحویل در سراسر کشور طی ۳ تا ۴ روز کاری</p>
+                                </div>
+                            </label>
+                            
+                            <label class="shipping-method">
+                                <input type="radio" name="shipping_method" value="free">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>ارسال رایگان</h4>
+                                        <span class="method-price">رایگان</span>
+                                    </div>
+                                    <p>برای خریدهای بالای ۵۰۰,۰۰۰ تومان</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="checkout-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-credit-card"></i> روش پرداخت</h2>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" value="online" checked>
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>پرداخت آنلاین</h4>
+                                        <i class="fab fa-cc-visa"></i>
+                                    </div>
+                                    <p>پرداخت امن از طریق درگاه بانکی</p>
+                                </div>
+                            </label>
+                            
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" value="cash">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>پرداخت در محل</h4>
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <p>پرداخت نقدی هنگام تحویل کالا</p>
+                                </div>
+                            </label>
+                            
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" value="wallet">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <h4>کیف پول</h4>
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <p>پرداخت از موجودی کیف پول</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Order Notes -->
+                    <div class="checkout-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-sticky-note"></i> یادداشت سفارش (اختیاری)</h2>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="order_notes" name="order_notes" rows="3" placeholder="یادداشت‌های مربوط به سفارش خود را اینجا بنویسید..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary-section">
+                    <div class="order-summary">
+                        <h3>خلاصه سفارش</h3>
+                        
+                        <div class="order-items" id="order-items">
+                            <!-- Order items will be loaded via JavaScript -->
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>جمع کل</span>
+                                <span id="order-subtotal">0 تومان</span>
+                            </div>
+                            <div class="total-row">
+                                <span>تخفیف</span>
+                                <span id="order-discount">0 تومان</span>
+                            </div>
+                            <div class="total-row">
+                                <span>هزینه ارسال</span>
+                                <span id="order-shipping">0 تومان</span>
+                            </div>
+                            <div class="total-divider"></div>
+                            <div class="total-row final">
+                                <span>مبلغ نهایی</span>
+                                <span id="order-total">0 تومان</span>
+                            </div>
+                        </div>
+
+                        <!-- Terms Acceptance -->
+                        <div class="terms-acceptance">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="accept-terms" required>
+                                <span class="checkmark"></span>
+                                <span>
+                                    <a href="terms.html">قوانین و شرایط</a> و 
+                                    <a href="privacy.html">حریم خصوصی</a> را مطالعه کرده و می‌پذیرم
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- Complete Order Button -->
+                        <button type="button" id="complete-order" class="btn btn-primary btn-large btn-block">
+                            <i class="fas fa-lock"></i>
+                            تکمیل سفارش و پرداخت
+                        </button>
+
+                        <!-- Security Assurance -->
+                        <div class="security-assurance">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>پرداخت شما کاملاً امن و محافظت شده است</span>
+                        </div>
+                    </div>
+
+                    <!-- Support Info -->
+                    <div class="support-info">
+                        <h4>نیاز به کمک دارید؟</h4>
+                        <div class="support-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>پشتیبانی تلفنی</span>
+                                    <strong>۰۲۱-۱۲۳۴۵۶۷۸</strong>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <span>پشتیبانی آنلاین</span>
+                                    <strong>۲۴/۷</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content payment-modal">
+            <div class="modal-header">
+                <h3>درگاه پرداخت</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="payment-processing">
+                    <div class="processing-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <h4>در حال اتصال به درگاه پرداخت...</h4>
+                    <p>لطفاً چند لحظه صبر کنید</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

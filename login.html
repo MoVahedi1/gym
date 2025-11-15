@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ورود به حساب کاربری VIP Fitness">
+    <title>ورود - VIP Fitness</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body class="auth-page">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-background">
+            <div class="auth-overlay"></div>
+            <div class="auth-content">
+                <h1>به VIP Fitness خوش آمدید</h1>
+                <p>با ورود به حساب کاربری، به تمامی امکانات و خدمات ما دسترسی پیدا کنید</p>
+                <div class="auth-features">
+                    <div class="feature">
+                        <i class="fas fa-dumbbell"></i>
+                        <span>برنامه تمرینی شخصی</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-user-md"></i>
+                        <span>مشاوره آنلاین</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>پیگیری پیشرفت</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-form-container">
+            <div class="auth-header">
+                <a href="index.html" class="auth-logo">
+                    <img src="images/logo.svg" alt="VIP Fitness">
+                    <span>VIP Fitness</span>
+                </a>
+                <h2>ورود به حساب کاربری</h2>
+                <p>حساب کاربری ندارید؟ <a href="register.html">ثبت‌نام کنید</a></p>
+            </div>
+
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">رمز عبور</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="رمز عبور خود را وارد کنید" required>
+                        <button type="button" class="password-toggle">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        مرا به خاطر بسپار
+                    </label>
+                    <a href="forgot-password.html" class="forgot-password">رمز عبور را فراموش کرده‌اید؟</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-block">
+                    <span class="btn-text">ورود به حساب</span>
+                    <div class="btn-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+
+                <div class="auth-divider">
+                    <span>یا ورود با</span>
+                </div>
+
+                <div class="social-auth">
+                    <button type="button" class="btn btn-google">
+                        <i class="fab fa-google"></i>
+                        گوگل
+                    </button>
+                    <button type="button" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        شماره تماس
+                    </button>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>با ورود یا ثبت‌نام در VIP Fitness، <a href="terms.html">قوانین و مقررات</a> و <a href="privacy.html">حریم خصوصی</a> را می‌پذیرید.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

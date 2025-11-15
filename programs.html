@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="برنامه‌های تمرینی VIP Fitness - چربی سوزی، عضله سازی، افزایش قدرت">
+    <title>برنامه‌های تمرینی - VIP Fitness</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="VIP Fitness Logo">
+                    <span>VIP Fitness</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="services.html" class="nav-link">خدمات</a></li>
+                    <li><a href="programs.html" class="nav-link active">برنامه‌ها</a></li>
+                    <li><a href="shop.html" class="nav-link">فروشگاه</a></li>
+                    <li><a href="blog.html" class="nav-link">وبلاگ</a></li>
+                    <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline">ورود</a>
+                    <a href="register.html" class="btn btn-primary">عضویت</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header section-padding">
+        <div class="container">
+            <h1 class="page-title">برنامه‌های تمرینی</h1>
+            <p class="page-subtitle">برنامه‌های تخصصی برای رسیدن به اهداف مختلف تناسب اندام</p>
+        </div>
+    </section>
+
+    <!-- Programs Filter -->
+    <section class="programs-filter section-padding bg-light">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">همه برنامه‌ها</button>
+                <button class="filter-btn" data-filter="fat-loss">چربی سوزی</button>
+                <button class="filter-btn" data-filter="muscle-gain">عضله سازی</button>
+                <button class="filter-btn" data-filter="strength">افزایش قدرت</button>
+                <button class="filter-btn" data-filter="beginner">مبتدی</button>
+                <button class="filter-btn" data-filter="advanced">پیشرفته</button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="program-search" placeholder="جستجوی برنامه‌ها...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Grid -->
+    <section class="programs-grid section-padding">
+        <div class="container">
+            <div class="programs-container" id="programs-container">
+                <!-- Programs will be loaded here via JavaScript -->
+                <div class="loading-skeleton">
+                    <div class="program-card skeleton"></div>
+                    <div class="program-card skeleton"></div>
+                    <div class="program-card skeleton"></div>
+                    <div class="program-card skeleton"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Details Modal -->
+    <div id="program-modal" class="modal">
+        <div class="modal-content program-modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="program-details">
+                <!-- Program details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/programs.js"></script>
+</body>
+</html>

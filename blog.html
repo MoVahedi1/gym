@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="وبلاگ VIP Fitness - مقالات تخصصی ورزش، تغذیه و سلامتی">
+    <title>وبلاگ - VIP Fitness</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="VIP Fitness Logo">
+                    <span>VIP Fitness</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="services.html" class="nav-link">خدمات</a></li>
+                    <li><a href="programs.html" class="nav-link">برنامه‌ها</a></li>
+                    <li><a href="shop.html" class="nav-link">فروشگاه</a></li>
+                    <li><a href="blog.html" class="nav-link active">وبلاگ</a></li>
+                    <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline">ورود</a>
+                    <a href="register.html" class="btn btn-primary">عضویت</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header section-padding">
+        <div class="container">
+            <h1 class="page-title">وبلاگ آموزشی</h1>
+            <p class="page-subtitle">مقالات تخصصی ورزش، تغذیه و سلامتی برای رسیدن به بهترین نتایج</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content section-padding">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Content -->
+                <div class="blog-main">
+                    <!-- Featured Post -->
+                    <div class="featured-post">
+                        <div class="featured-image">
+                            <img src="images/blog/featured.jpg" alt="مقاله ویژه">
+                            <div class="featured-badge">مقاله ویژه</div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="post-meta">
+                                <span class="post-category">تغذیه ورزشی</span>
+                                <span class="post-date"><i class="far fa-clock"></i> ۱۴۰۲/۰۸/۱۵</span>
+                                <span class="post-reading-time">۸ دقیقه مطالعه</span>
+                            </div>
+                            <h2 class="post-title">راهنمای کامل مصرف پروتئین برای ورزشکاران</h2>
+                            <p class="post-excerpt">پروتئین یکی از مهمترین درشت مغذی‌ها برای ورزشکاران است. در این مقاله به بررسی زمان‌بندی مصرف، انواع پروتئین‌ها و مقدار مورد نیاز برای اهداف مختلف می‌پردازیم.</p>
+                            <a href="blog-single.html" class="btn btn-primary">مطالعه مقاله</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="blog-posts-grid" id="blog-posts">
+                        <!-- Posts will be loaded via JavaScript -->
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more-container">
+                        <button id="load-more" class="btn btn-outline">بارگذاری مقالات بیشتر</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">جستجو در مقالات</h3>
+                        <div class="search-widget">
+                            <input type="text" placeholder="جستجوی مقالات..." id="blog-search">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">دسته‌بندی‌ها</h3>
+                        <ul class="categories-list" id="blog-categories">
+                            <!-- Categories will be loaded via JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">مقالات پرطرفدار</h3>
+                        <div class="popular-posts" id="popular-posts">
+                            <!-- Popular posts will be loaded via JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget">
+                        <div class="newsletter-widget">
+                            <h3>عضویت در خبرنامه</h3>
+                            <p>جدیدترین مقالات و تخفیف‌ها را دریافت کنید</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                                <button type="submit" class="btn btn-primary">عضویت</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه مکمل‌های ورزشی VIP Fitness - پروتئین، کراتین، آمینو اسید و مکمل‌های با کیفیت">
+    <title>فروشگاه مکمل - VIP Fitness</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="VIP Fitness Logo">
+                    <span>VIP Fitness</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="services.html" class="nav-link">خدمات</a></li>
+                    <li><a href="programs.html" class="nav-link">برنامه‌ها</a></li>
+                    <li><a href="shop.html" class="nav-link active">فروشگاه</a></li>
+                    <li><a href="blog.html" class="nav-link">وبلاگ</a></li>
+                    <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline">ورود</a>
+                    <a href="register.html" class="btn btn-primary">عضویت</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header section-padding">
+        <div class="container">
+            <h1 class="page-title">فروشگاه مکمل</h1>
+            <p class="page-subtitle">انواع مکمل‌های ورزشی با کیفیت عالی و تضمین اصل بودن محصول</p>
+        </div>
+    </section>
+
+    <!-- Shop Filters -->
+    <section class="shop-filters section-padding bg-light">
+        <div class="container">
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="category-filter">دسته‌بندی:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">همه محصولات</option>
+                        <option value="پروتئین">پروتئین</option>
+                        <option value="کراتین">کراتین</option>
+                        <option value="آمینو اسید">آمینو اسید</option>
+                        <option value="انرژی زا">انرژی زا</option>
+                        <option value="ویتامین">ویتامین</option>
+                        <option value="اسید چرب">اسید چرب</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">محدوده قیمت:</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="all">همه قیمت‌ها</option>
+                        <option value="0-100000">تا ۱۰۰,۰۰۰ تومان</option>
+                        <option value="100000-200000">۱۰۰,۰۰۰ تا ۲۰۰,۰۰۰ تومان</option>
+                        <option value="200000-300000">۲۰۰,۰۰۰ تا ۳۰۰,۰۰۰ تومان</option>
+                        <option value="300000-9999999">بالای ۳۰۰,۰۰۰ تومان</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand-filter">برند:</label>
+                    <select id="brand-filter" class="filter-select">
+                        <option value="all">همه برندها</option>
+                        <option value="Optimum Nutrition">Optimum Nutrition</option>
+                        <option value="Dymatize">Dymatize</option>
+                        <option value="MuscleTech">MuscleTech</option>
+                        <option value="BSN">BSN</option>
+                        <option value="Cellucor">Cellucor</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">مرتب‌سازی:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="default">پیش‌فرض</option>
+                        <option value="price-low">قیمت: کم به زیاد</option>
+                        <option value="price-high">قیمت: زیاد به کم</option>
+                        <option value="name">نام محصول</option>
+                        <option value="rating">بالاترین امتیاز</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="product-search" placeholder="جستجوی محصولات...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid section-padding">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="products-count">همه محصولات</h2>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="products-container" id="products-container">
+                <!-- Products will be loaded here via JavaScript -->
+                <div class="loading-skeleton">
+                    <div class="product-card skeleton"></div>
+                    <div class="product-card skeleton"></div>
+                    <div class="product-card skeleton"></div>
+                    <div class="product-card skeleton"></div>
+                    <div class="product-card skeleton"></div>
+                    <div class="product-card skeleton"></div>
+                </div>
+            </div>
+            
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content quick-view-modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="quick-view-content">
+                <!-- Product quick view content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

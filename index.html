@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="باشگاه ورزشی لوکس VIP Fitness - مشاوره آنلاین، برنامه تمرینی شخصی‌سازی شده و فروشگاه مکمل">
+    <title>VIP Fitness - باشگاه ورزشی لوکس</title>
+    
+    <!-- Google Fonts - Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+        </div>
+        <p>در حال بارگذاری...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="VIP Fitness Logo">
+                    <span>VIP Fitness</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">خانه</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="services.html" class="nav-link">خدمات</a></li>
+                    <li><a href="programs.html" class="nav-link">برنامه‌ها</a></li>
+                    <li><a href="shop.html" class="nav-link">فروشگاه</a></li>
+                    <li><a href="blog.html" class="nav-link">وبلاگ</a></li>
+                    <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت تاریک/روشن">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline">ورود</a>
+                    <a href="register.html" class="btn btn-primary">عضویت</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-video">
+                <!-- Video background would go here -->
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text">به باشگاه VIP Fitness خوش آمدید</span>
+                </h1>
+                <p class="hero-subtitle">مشاوره آنلاین، برنامه تمرینی شخصی‌سازی شده و فروشگاه مکمل</p>
+                <div class="hero-actions">
+                    <a href="register.html" class="btn btn-primary btn-large pulse">شروع کنید</a>
+                    <a href="about.html" class="btn btn-outline btn-large">درباره ما</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدمات ما</h2>
+                <p class="section-subtitle">با خدمات حرفه‌ای ما به اهداف تناسب اندام خود برسید</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="service-title">برنامه تمرینی شخصی</h3>
+                    <p class="service-description">برنامه تمرینی کاملاً شخصی‌سازی شده بر اساس اهداف، سطح آمادگی جسمانی و محدودیت‌های شما</p>
+                    <a href="programs.html" class="service-link">اطلاعات بیشتر <i class="fas fa-arrow-left"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="service-title">مشاوره آنلاین</h3>
+                    <p class="service-description">مشاوره تخصصی با مربیان حرفه‌ای از طریق ویدئو کنفرانس برای راهنمایی و پشتیبانی مداوم</p>
+                    <a href="services.html" class="service-link">اطلاعات بیشتر <i class="fas fa-arrow-left"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="service-title">فروشگاه مکمل</h3>
+                    <p class="service-description">انواع مکمل‌های ورزشی با کیفیت عالی و تضمین اصل بودن محصول با قیمت مناسب</p>
+                    <a href="shop.html" class="service-link">اطلاعات بیشتر <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">نظرات مشتریان</h2>
+                <p class="section-subtitle">تجربه افرادی که با ما به اهداف خود رسیده‌اند</p>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>با برنامه تمرینی شخصی‌سازی شده و مشاوره حرفه‌ای تیم VIP Fitness، توانستم در مدت ۶ ماه به وزن ایده‌آل خود برسم و سلامت جسمی ام را بهبود دهم.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/client1.jpg" alt="علی محمدی">
+                            <div class="author-info">
+                                <h4>علی محمدی</h4>
+                                <span>عضویت از ۱۴۰۱</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>مکمل‌های باکیفیت و برنامه غذایی دقیق ارائه شده توسط مربیان VIP Fitness به من کمک کرد تا توده عضلانی خود را به طور چشمگیری افزایش دهم.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/client2.jpg" alt="علی رضایی">
+                            <div class="author-info">
+                                <h4>علی رضایی</h4>
+                                <span>عضویت از ۱۴۰۰</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>مشاوره آنلاین این باشگاه برای من که وقت کافی برای حضور فیزیکی نداشتم، بهترین گزینه بود. در ۴ ماه ۱۲ کیلوگرم کاهش وزن داشتم.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/client3.jpg" alt="حسین حسینی">
+                            <div class="author-info">
+                                <h4>حسین حسینی</h4>
+                                <span>عضویت از ۱۴۰۲</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-prev" aria-label="نظر قبلی">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+                <button class="carousel-next" aria-label="نظر بعدی">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">آماده تغییر هستید؟</h2>
+                <p class="cta-subtitle">همین امروز سفر تناسب اندام خود را آغاز کنید</p>
+                <a href="register.html" class="btn btn-primary btn-large">عضویت رایگان</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="VIP Fitness Logo">
+                        <span>VIP Fitness</span>
+                    </div>
+                    <p class="footer-description">باشگاه ورزشی VIP Fitness با ارائه خدمات تخصصی مشاوره آنلاین، برنامه تمرینی شخصی و فروشگاه مکمل، همراه شما در مسیر رسیدن به اندام ایده‌آل است.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="تلگرام"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="واتساپ"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="یوتیوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="services.html">خدمات</a></li>
+                        <li><a href="programs.html">برنامه‌ها</a></li>
+                        <li><a href="shop.html">فروشگاه</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">خدمات</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">برنامه تمرینی</a></li>
+                        <li><a href="services.html">مشاوره آنلاین</a></li>
+                        <li><a href="shop.html">فروشگاه مکمل</a></li>
+                        <li><a href="blog.html">وبلاگ آموزشی</a></li>
+                        <li><a href="contact.html">پشتیبانی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">خبرنامه</h3>
+                    <p class="footer-newsletter">برای دریافت جدیدترین مطالب آموزشی و تخفیف‌های ویژه در خبرنامه ما عضو شوید</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                        <button type="submit" class="btn btn-primary">عضویت</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۲ کلیه حقوق برای VIP Fitness محفوظ است.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">قوانین و مقررات</a>
+                    <a href="#">حریم خصوصی</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
